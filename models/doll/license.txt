@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vanellope T-Pose(rework)
+* source:	https://sketchfab.com/3d-models/vanellope-t-poserework-3f0c48bb0f9d4b3092b059eef26ed2af
+* author:	Soulraider.Dev (https://sketchfab.com/gneissler)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vanellope T-Pose(rework)" (https://sketchfab.com/3d-models/vanellope-t-poserework-3f0c48bb0f9d4b3092b059eef26ed2af) by Soulraider.Dev (https://sketchfab.com/gneissler) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

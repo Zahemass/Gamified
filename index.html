@@ -1,83 +1,125 @@
+<!--
+  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
+  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
+-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8" />
     <title>Gamified education</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Custom css-->
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <audio autoplay loop>
-        <source src = "bgmusic.mp3" type = "audio/mp3">
-    </audio>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--Background Music -->
+    <video id="myAudio" controls autoplay loop muted>
+      <source src="bgmusic.mp3" type="audio/mp3">
+      
+  </video>
+
+    <!--Full Screen-->
     <section class="home">
-        <div class="profile">
-            <div class="outer-ring center"></div>
-        <div class="inner-ring center"></div>
-            <a><div class = "profile-pic"></a>
-                <img class = "badgeposition" src="../images/bage.png" alt="">
-            </div>
-            <h4 class="username">Username</h4>
-        </div>
-        <div class="navigationbar">
-            <nav class="navbar navbar-expand-lg ">
-              
-               
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="navlink0 nav-link " aria-current="page" href="#">HOME</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navlink nav-link " aria-current="page" href="#">COURSE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navlink nav-link " aria-current="page" href="#">EVENTS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navlink nav-link " aria-current="page" href="#">CLAN</a>
-                      </li>
-                      
-                      
-                    </ul>
+      <!--Profile Section-->
+      <div class="profile">
+          <div class="outer-ring center"></div>
+      <div class="inner-ring center"></div>
+          <a><div class = "profile-pic"></a>
+              <img class = "badgeposition" src="images/bage.png" alt="">
+          </div>
+          <!--Username insertion-->
+          <h4 class="username">Username</h4>
+      </div>
+
+      <!--Navigation bar Section-->
+      <div class="navigationbar">
+          <nav class="navbar navbar-expand-lg ">
+                  <div class="homebox"></div>
+             
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="navlink0 nav-link " aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navlink nav-link " aria-current="page" href="#">COURSE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navlink nav-link " aria-current="page" href="#">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navlink nav-link " aria-current="page" href="#">CLAN</a>
+                    </li>
                     
-                
-              </nav>
-        </div>
-        <div class="points">
-            <div class="score">
-                <h5>500</h5>
-                <div class="score-card"></div>
-            </div><img src="../images/holics.png" alt="" class="holicks">
-            <div class="score1">
-                <h5>1200</h5>
-                <div class="score-card1"></div>
-            </div>
-                <img src="../images/holicks.png" alt="" class="sp">
-        </div>
-        <div class="treasure">
-            <img src="../images/treasure.png" alt="" class="treasurebox">
-        </div>
-        <div class="map">
-            <img src="../images/selection.png" alt="" class="map">
-        </div>
-        <div class="start">
-            <h3>START</h3>
-        </div>
-        <div class="bag">
-            <img src="../images/bag.png" alt="" class="bagpos">
-        </div>
-    </section>
+                    
+                  </ul>
+                  
+              
+            </nav>
+      </div>
 
+      <!--Points Section-->
+      <div class="points">
+          <div class="score">
+              <h5>500</h5>
+              <div class="score-card"></div>
+          </div><img src="images/holics.png" alt="" class="holicks">
+          <div class="score1">
+              <h5>1200</h5>
+              <div class="score-card1"></div>
+          </div>
+              <img src="images/holicks.png" alt="" class="sp">
+      </div>
 
+      <!--Treasure Vault Section-->
+      <div class="treasure">
+          <img src="images/treasure.png" alt="" class="treasurebox">
+      </div>
+      <i class="fa-col fa fa-volume-off" onclick="myFunction()" id="p1" style="font-size:36px"></i>
+      <!--Map Section-->
+      <div class="map">
+          <img src="images/selection.png" alt="" class="map">
+      </div>
 
-     <!-- Option 1: Bootstrap Bundle with Popper -->
+      <!--Start Section-->
+      <div class="start">
+          <h3>START</h3>
+      </div>
+
+      <!--Mission Section-->
+      <div class="bag">
+          <img src="images/bag.png" alt="" class="bagpos">
+      </div>
+
+      <!--3d Model Section-->
+      <div class="animation">
+      <main>
+        <div id="container3D"></div>
+      </main>
+    </div>
+  </section>
+    
+  <script>
+    function myFunction() {
+      var audio = document.getElementById("myAudio");
+      var x = audio.muted
+        if (x === true){
+          audio.muted = false; 
+          audio.play();
+          document.getElementById("p1").innerHTML = '<i class="fa fa-wifi" style="font-size:24px; transform: rotate(90deg); position:absolute; bottom:15px"></i>';
+        }
+        else{
+          audio.muted = true; 
+          document.getElementById("p1").innerHTML = '';
+        }
+    }
+    </script>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-</body>
+    <!--Custom css-->
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>

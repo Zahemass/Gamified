@@ -1,0 +1,11 @@
+Model Information:
+* title:	CSGO Tm Anarchist Character Rigged
+* source:	https://sketchfab.com/3d-models/csgo-tm-anarchist-character-rigged-fcd24f9b4dfd4d8d8560606de2dc651c
+* author:	BillyTheKid (https://sketchfab.com/FGmodels)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "CSGO Tm Anarchist Character Rigged" (https://sketchfab.com/3d-models/csgo-tm-anarchist-character-rigged-fcd24f9b4dfd4d8d8560606de2dc651c) by BillyTheKid (https://sketchfab.com/FGmodels) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
