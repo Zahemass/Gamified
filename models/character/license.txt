@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rigged Stylised Character [Free]
+* source:	https://sketchfab.com/3d-models/rigged-stylised-character-free-a211e95c537242149041ca072ac5d529
+* author:	BlendTek (https://sketchfab.com/namfd)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rigged Stylised Character [Free]" (https://sketchfab.com/3d-models/rigged-stylised-character-free-a211e95c537242149041ca072ac5d529) by BlendTek (https://sketchfab.com/namfd) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
