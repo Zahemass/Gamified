@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
+/*Profile*/
+.home{
+    background: url(../images/Home\ page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px ;
+    height: 100vh;
+    width: 100%;
+}
+.profile{
+    position: relative;
+    top: 50px;
+    left: 5%;
+    width: 0%;
+}
+.center {
+    margin: 0 auto;
+  }
+  
+  .outer-ring {
+    position: absolute;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(135deg, #FEED07 0%, #ffffff 5%, rgb(255, 255, 255) 15%, #DB00FF 100%);
+    border-radius: 50%;
+    
+    /*  Rotate  */
+    animation-duration: 1.2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+  }
+  
+  .inner-ring {
+    position: absolute;
+    left: 37.5%;
+    height: 98px;
+    width: 98px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 5px;
+    background-position-x: 1px;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+      0% {transform:rotate(0deg);}
+      100% {transform:rotate(360deg);}
+  }
+  
+.profile-pic{
+    height: 100px;
+    width: 100px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-position-y: 3.5px;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+.badgeposition{
+    position: absolute;
+    left: 40px;
+    top: 55px;
+}
+.username{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: 30px;
+    font-family: 'Goldman', cursive;
+}
+
+/*Navigation Bar*/
+.navigationbar{
+    height: 80px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #DB00FF;
+    position: relative;
+    left: 30%;
+    bottom: 5%;
+    box-shadow: 0 0 50px -10px #DB00FF;
+}
+.navbar{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.navlink0{
+    color: #DB00FF;
+    margin: 20px;
+    font-family: 'Gluten', cursive;
+    font-size: 24px;
+    margin-left: 25px;
+}
+.navlink0:hover{
+    color: #DB00FF;
+}
+.navlink{
+    color: white;
+    margin: 20px;
+    font-family: 'Gluten', cursive;
+    font-size: 24px;
+}
+.navlink:hover{
+    color:#DB00FF;
+}
+/*MAP SECTION*/
+.map{
+    position: absolute;
+    top: 220px;
+    left: 3%;
+    transform: scale(1);
+    z-index: 1;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+.map:hover{
+    transform: scale(1.05);
+}
+/*Start Button*/
+.start{
+    
+    background: linear-gradient(270deg, rgba(255, 223, 0, 1), #fffcbc, rgba(255, 223, 0, 1), #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    width:220px;
+    height:80px;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 450px;
+    left: 3.5%;
+    font-family: 'Goldman', cursive;
+    cursor: pointer;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*Bag SECTION*/
+.bag{
+    position: absolute;
+    top: 520px;
+    left: 81%;
+    transform: scale(.8);
+    z-index: 1;
+    transition: .2s ease-in;
+    cursor: pointer;
+    animation-name: infinitescale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes infinitescale{
+    0% {
+		transform: scale(.8);
+	}
+	50% {
+		transform: scale(.9);
+	}
+	100% {
+		transform: scale(.8);
+	}
+}
+
+/*Points SECTION*/
+.points{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100px;
+    position: absolute;
+    left: 93%;
+    top: 5%;
+}
+.score{
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 100px 100px 100px 100px;
+    background-color: transparent;
+    position: absolute;
+    right: 150%;
+    top: 40px;
+
+}
+.score-card{
+    width: 90px;
+    height: 28px;
+    
+    border-radius: 100px 100px 100px 100px;
+    background-image: linear-gradient(to right,  rgba(255, 178, 246, 1), rgb(255, 15, 143),rgba(197, 26, 184, 1));
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    animation-name: scorecardholicks;
+    animation-duration: 1s;
+
+}
+.score-card1{
+    width: 120px;
+    height: 28px;
+    
+    border-radius: 100px 100px 100px 100px;
+    background-image: linear-gradient(to right,  rgba(255, 255, 255, 1), rgba(101, 163, 255, 1),rgba(0, 241, 255, 1));
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    animation-name: scorecardsp;
+    animation-duration: 1s;
+
+}
+@keyframes scorecardholicks{
+    0% {
+		width: 0px;
+	}
+	
+	100% {
+		width: 90px;
+	}
+}
+@keyframes scorecardsp{
+    0% {
+		width: 0px;
+	}
+	
+	100% {
+		width: 120px;
+	}
+}
+.score1{
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 100px 100px 100px 100px;
+    background-color: transparent;
+    position: absolute;
+    right: 150%;
+    top: 100px;
+
+}
+.holicks{
+    height: 130px;
+    width: 130px;
+    position: relative;
+    right: 80px;
+    bottom: 5px;
+}
+.sp{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    right: 48px;
+    bottom: 45px;
+}
+h5{
+    color:white;
+    margin-left: 20px;
+    font-size: 24px;
+    font-family: 'Yrsa', serif;
+}
+/*Treasure SECTION*/
+.treasure{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 250px;
+    cursor: pointer;
+}
+
