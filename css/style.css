@@ -20,6 +20,8 @@ audio{
     top: 50px;
     left: 5%;
     width: 0%;
+    cursor: pointer;
+    z-index: 100;
 }
 .center {
     margin: 0 auto;

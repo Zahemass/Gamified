@@ -6,8 +6,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamified education</title>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -25,12 +27,12 @@
     <!--Full Screen-->
     <section class="home">
       <!--Profile Section-->
-      <div class="profile">
+      <a href="./profile.html" class="profile-link"><div class="profile">
           <div class="outer-ring center"></div>
       <div class="inner-ring center"></div>
-          <a><div class = "profile-pic"></a>
+          <div class = "profile-pic">-
               <img class = "badgeposition" src="images/bage.png" alt="">
-          </div>
+          </div></a>
           <!--Username insertion-->
           <h4 class="username">Username</h4>
       </div>
@@ -45,7 +47,7 @@
                       <a class="navlink0 nav-link " aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                      <a class="navlink nav-link " aria-current="page" href="#">COURSE</a>
+                      <a class="navlink nav-link " aria-current="page" href="./course.html">COURSE</a>
                     </li>
                     <li class="nav-item">
                       <a class="navlink nav-link " aria-current="page" href="#">EVENTS</a>
@@ -80,13 +82,13 @@
       </div>
       <i class="fa-col fa fa-volume-off" onclick="myFunction()" id="p1" style="font-size:36px"></i>
       <!--Map Section-->
-      <div class="map">
-          <img src="images/selection.png" alt="" class="map">
-      </div>
+     <div class="map">
+      <a href="./map.html"><img src="images/selection.png" alt="" class="map">
+      </div></a>
 
       <!--Start Section-->
       <div class="start">
-          <h3>START</h3>
+          <a href="quiz.html"><h3>START</h3></a>
       </div>
 
       <!--Mission Section-->
@@ -95,15 +97,20 @@
       </div>
 
       <!--3d Model Section-->
-      <div class="animation">
-      <main>
-        <div id="container3D"></div>
-      </main>
-    </div>
+     <div class="center_3d">
+      <model-viewer ar camera-controls touch-action="pan-y" src="./Model/Astronaut.glb" alt="A 3D model of an astronaut">
+        
+      </model-viewer>
+     </div>
   </section>
     
   <script>
     function myFunction() {
+      window.onload = function() {
+      var audio = document.getElementById("myAudio");
+  audio.play();
+      };
+
       var audio = document.getElementById("myAudio");
       var x = audio.muted
         if (x === true){
@@ -120,6 +127,6 @@
       <!-- Option 1: Bootstrap Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--Custom css-->
-    <script type="module" src="js/main.js"></script>
+
   </body>
 </html>

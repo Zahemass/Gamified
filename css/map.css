@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
+
+.home{
+    background: url(../images/Home\ page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px ;
+    height: 100vh;
+    width: 100%;
+}

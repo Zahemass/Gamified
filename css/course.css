@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
+.home{
+    background: url(../images/Home\ page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px ;
+    height: 100vh;
+    width: 100%;
+}
+.profile{
+    position: relative;
+    top: 50px;
+    left: 5%;
+    width: 0%;
+}
+.center {
+    margin: 0 auto;
+  }
+  
+  .outer-ring {
+    position: absolute;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(135deg, #FEED07 0%, #ffffff 5%, rgb(255, 255, 255) 15%, #DB00FF 100%);
+    border-radius: 50%;
+    
+    /*  Rotate  */
+    animation-duration: 1.2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+  }
+  
+  .inner-ring {
+    position: absolute;
+    left: 37.5%;
+    height: 98px;
+    width: 98px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 5px;
+    background-position-x: 1px;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+      0% {transform:rotate(0deg);}
+      100% {transform:rotate(360deg);}
+  }
+  
+.profile-pic{
+    height: 100px;
+    width: 100px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-position-y: 3.5px;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+/*Navigation Bar*/
+.navigationbar{
+    height: 80px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #DB00FF;
+    position: relative;
+    left: 30%;
+    bottom: 5%;
+    box-shadow: 0 0 50px -10px #DB00FF;
+    z-index: 100;
+}
+.homebox{
+    height:78px;
+    width: 155px;
+    background: linear-gradient(to top,rgba(221, 0, 255, 0.445),rgba(113, 18, 110, 0.335),rgba(187, 0, 180, 0));
+    position: absolute;
+    bottom:20px;
+    left: 120px;
+    z-index: -1;
+    
+}
+.navbar{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.navlink0{
+    color: white;
+    margin: 20px;
+    font-family: 'Gluten', cursive;
+    font-size: 24px;
+    margin-left: 25px;
+}
+.navlink0:hover{
+    color: white;
+}
+.navlink{
+    color: white;
+    margin: 20px;
+    font-family: 'Gluten', cursive;
+    font-size: 24px;
+}
+.navlink:hover{
+    color:#DB00FF;
+}
+.username{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: 30px;
+    font-family: 'Goldman', cursive;
+}
+.badgeposition{
+    position: absolute;
+    left: 40px;
+    top: 55px;
+}
+
+/*input box*/
+
+.inputbox{
+    background-color: black;
+    height: 60px;
+    position: absolute;
+    left: 150px;
+    bottom: 490px;
+    width: 25%;
+    border: 2px solid rgb(255, 255, 255);
+    border-end-end-radius:30px ;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+    
+    
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+
+}
+
+input::placeholder{
+    color: white;
+    position: absolute;
+    left: 125px;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+    
+}
+.linebox{
+    height: 60px;
+    width: 5px;
+    background-color: aliceblue ;
+    position: absolute;
+    left: 225px;
+    bottom: 490px;
+}
+.fallsearch{
+   position: absolute;
+   left: 180px;
+   top: 205px;
+   z-index: 1;
+   font-size:36px;
+   color: white;
+}
+
+/*star prog*/
+.progtxt{
+    color: white;
+    position: absolute;
+    right: 200px;
+    top: 210px;
+    font-family: 'Goldman', cursive;
+}
+.star{
+    position: absolute;
+    right: 100px;
+    top: 180px;
+}
+
+/*course section*/
+.course-section{
+    height: 62vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px 10px 5px #ffffff, 0px -10px 5px #ffffff;
+}
+
+.pic1{
+    height: 300px;
+    width: 300px;
+    background: url(../images/html.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 150px;
+    top: 32px;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+.pic1:hover{
+    background: url(../images/html-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic2{
+    height: 300px;
+    width: 300px;
+    background: url(../images/css.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 650px;
+    top: 32px;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+.pic2:hover{
+    background: url(../images/css\ -\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pic3{
+    height: 300px;
+    width: 300px;
+    background: url(../images/python.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 1150px;
+    top: 32px;
+    transition: .1s ease-in;
+    cursor: pointer;
+}
+.pic3:hover{
+    background: url(../images/python\ -\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.html{
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 250px;
+    font-family: 'Goldman', cursive;
+}
+.html1{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 190px;
+    font-family: 'Goldman', cursive;
+}
+.css{
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 775px;
+    font-family: 'Goldman', cursive;
+}
+.css1{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 712px;
+    font-family: 'Goldman', cursive;
+}
+.python{
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 1250px;
+    font-family: 'Goldman', cursive;
+}
+.python1{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 1220px;
+    font-family: 'Goldman', cursive;
+}
+
+
+
+
+

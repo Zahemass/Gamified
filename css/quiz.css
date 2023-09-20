@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Yrsa:wght@300&display=swap');
+.quiz{
+    background: url(../images/quizbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px ;
+    height: 100vh;
+    width: 100%;
+}
+
+.door4{
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.door3{
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+.door2{
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.door1{
+    height: 120px;
+    position: absolute;
+    left: 9.5%;
+    top: 70%;
+}
+
+.x{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+.quizquest{
+    position: absolute;
+    left: 400px;
+    top: 30px;
+}
+
+.container{
+    position: absolute;
+    top: 500px;
+    left: 460px;
+    width: 60%;
+    
+
+}
+.container1{
+    position: absolute;
+    top: 500px;
+    left: 560px;
+    width: 60%;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    font-size: 30px;
+
+}
+.container2{
+    
+    position: absolute;
+    top: 460px;
+    left: 460px;
+    width: 60%;
+
+}
+.leni{
+    position: absolute;
+    top: 100px;
+    left: 460px;
+    cursor: pointer;
+}
+.leni1{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    cursor: pointer;
+    z-index: 1;
+}
+.len{
+    position: absolute;
+    top: 100px;
+    left: 450px;
+}
+.len1{
+    position: absolute;
+    top: 100px;
+    left: -10px;
+}
+.tic{
+    cursor: pointer;
+}
+
+.next{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+#check1{
+    visibility: hidden;
+}
+#check2{
+    display: none;
+}
+.check3{
+    display: none;
+}
+.check4{
+    display: none;
+}

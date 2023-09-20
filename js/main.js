@@ -109,8 +109,3 @@ document.onmousemove = (e) => {
 animate();
 
 //music player
-window.onload = function() {
-  var audio = document.getElementById("myAudio");
-  audio.play();
-  
-};

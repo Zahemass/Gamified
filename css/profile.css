@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300&display=swap');
+.home{
+    background: url(../images/Home\ page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px ;
+    height: 100vh;
+    width: 100%;
+}
+.profile{
+    position: relative;
+    top: 50px;
+    left: 5%;
+    width: 0%;
+}
+.center {
+    margin: 0 auto;
+  }
+  
+  .outer-ring {
+    position: absolute;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(135deg, #FEED07 0%, #ffffff 5%, rgb(255, 255, 255) 15%, #DB00FF 100%);
+    border-radius: 50%;
+    
+    /*  Rotate  */
+    animation-duration: 1.2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+  }
+  
+  .inner-ring {
+    position: absolute;
+    left: 37.5%;
+    height: 98px;
+    width: 98px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 5px;
+    background-position-x: 1px;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate {
+      0% {transform:rotate(0deg);}
+      100% {transform:rotate(360deg);}
+  }
+  
+.profile-pic{
+    height: 100px;
+    width: 100px;
+    background: url(../images/profilepic.png);
+    background-repeat: no-repeat;
+    background-position-y: 3.5px;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+/*username and details*/
+.username{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: 70px;
+    font-family: 'Goldman', cursive;
+}
+.HolicksDetails{
+    display: flex;
+    flex-direction: row;
+}
+.holicks{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: 25px;
+    width: 250px;
+    font-family: 'Goldman', cursive;
+    font-size: 16px;
+    
+}
+.holicpic{
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+    
+}
+.holicscore{
+    position: absolute;
+    left: 260px;
+    color: white;
+    font-family: 'Yrsa', serif;
+    width: 200px;
+    top: 40px;
+    font-size: 28px;
+}
+
+.SpDetails{
+    display: flex;
+    flex-direction: row;
+}
+.Sp{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: -20px;
+    width: 250px;
+    font-family: 'Goldman', cursive;
+    font-size: 18px;
+}
+.Sppic{
+    position: absolute;
+    left: 200px;
+    top: 75px;
+    height: 50px;
+    width: 50px;
+    
+}
+.Spscore{
+    position: absolute;
+    left: 260px;
+    color: white;
+    font-family: 'Yrsa', serif;
+    width: 200px;
+    top: 85px;
+    font-size: 28px;
+}
+
+.Points{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: -65px;
+    width: 250px;
+    font-size: 18px;
+    font-family: 'Goldman', cursive;
+    
+}
+.Pointspic{
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    height: 50px;
+    width: 50px;
+    
+}
+.Pointsscore{
+    position: absolute;
+    left: 260px;
+    color: white;
+    font-family: 'Yrsa', serif;
+    width: 200px;
+    top: 125px;
+    font-size: 28px;
+}
+.points{
+    color: white;
+    position: absolute;
+    left: 120px;
+    bottom: -50px;
+    width: 250px;   
+}
+
+/*bage*/
+.badgeposition{
+    position: absolute;
+    left: 1300px;
+    bottom: 35px;
+    height: 80px;
+    width: 100px;
+}
+.text-posi{
+    color: white;
+    font-family: 'Goldman', cursive;
+    position: absolute;
+    right: -1px;
+    bottom: -20px;
+}
+
+.navigationbar{
+    height: 80px;
+    width: 700%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FF0000;
+    position: relative;
+    left: 30%;
+    top: 200px;
+    z-index: 100;
+}
+.homebox{
+    height:78px;
+    width: 165px;
+    position: absolute;
+    bottom:20px;
+    left: -30px;
+    z-index: -1;
+    border-right: 2px solid #FF0000;
+    
+}
+.homebox1{
+    height:78px;
+    width: 165px;
+    position: absolute;
+    bottom:20px;
+    left: 190px;
+    z-index: -1;
+    border-right: 2px solid #FF0000;
+    
+}
+.navbar{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.navlink0{
+    color: #FF0000;
+    margin: 20px;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    margin-left: 0px;
+}
+.navlink0:hover{
+    color: #FF0000;
+}
+.navlink{
+    color: white;
+    margin: 20px;
+    position: relative;
+    left: 10px;
+    font-family: 'Goldman', cursive;
+    font-size: 23px;
+}
+.navlink:hover{
+    color: #FF0000;
+}
+.stat{
+    color: white;
+    font-family: 'Goldman', cursive;
+    position: absolute;
+    left: 520px;
+    top: 300px;
+}
+.static{
+    position: absolute;
+    top: 359px;
+    left: 300px;
+    height: 330px;
+}
+.navlink1{
+    color: #FF0000;
+    margin: 20px;
+    position: relative;
+    left: 10px;
+    font-family: 'Goldman', cursive;
+    font-size: 23px;
+}
+.navlink1:hover{
+    color: #FF0000;
+}
+.navlink2{
+    color: #ffffff;
+    margin: 20px;
+    font-family: 'Goldman', cursive;
+    font-size: 24px;
+    margin-left: 0px;
+}
+.navlink2:hover{
+    color: #FF0000;
+}
+.rank{
+    position: absolute;
+    left: 1050px;
+    top: 350px;
+}
